@@ -11,52 +11,71 @@ export default class About extends Component {
           <main id="about">
             <h1 className="lg-heading">
               About
-              <span className="text-secondary">Me</span>
+              <span className="text-secondary"> Me</span>
             </h1>
-            <h2 className="sm-heading">Let me tell you a few things...</h2>
             <div className="about-info">
               <img
-                src="img/portrait.jpg"
-                alt="John Doe"
+                src="static/media/portrait.f4b2a5d7.jpg"
+                alt="Ioan Zicu"
                 className="bio-image"
               />
               <div className="bio">
-                <h3 className="text-secondary">BIO</h3>
+                <h2 className="text-secondary">
+                  Let me tell you a few things...
+                  <hr />
+                </h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  magni, nemo corporis pariatur temporibus neque. Omnis ipsam
-                  labore temporibus? Error optio ut cupiditate hic nulla
-                  molestias repellendus laboriosam placeat necessitatibus!
+                  I am a young passionate about web technologies, networking and
+                  programming languages like JavaScript (Node.js), PHP, Python
+                  and C#. Able to develop full-stack web application with
+                  RESTful and API functionality. Interested in learning the new
+                  practical skills for increasing problem solving ability.
                 </p>
               </div>
 
               <div className="job job-1">
-                <h3>123 WebShop</h3>
-                <h6>Full Stack Developer</h6>
+                <div className="job-title">
+                  <i className="fas fa-hands-helping fa-3x" />
+                  <h2>
+                    <b>Voluntary</b>
+                    <hr />
+                  </h2>
+                </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam exercitationem nobis eaque ducimus minus provident
-                  inventore ad consequuntur quis minima.
+                  Initiating, organizing and running a series of C# (basic
+                  elements) trainings attended by 15 international students of
+                  computer science. (Spring 2018)
                 </p>
               </div>
 
               <div className="job job-2">
-                <h3>Designers ABC</h3>
-                <h6>Front End Developer</h6>
+                <div className="job-title">
+                  <i className="fas fa-users fa-3x" />
+                  <h2>
+                    <b>Extracurricular activity</b>
+                  </h2>
+                  <hr />
+                </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam exercitationem nobis eaque ducimus minus provident
-                  inventore ad consequuntur quis minima.
+                  Participating at the series of the workshops and hakatons on
+                  the topics: Heuristic methods, Designing web applications,
+                  Coding and Designing of embedded systems, Textronic. (October
+                  2018 - March 2019)
                 </p>
               </div>
 
               <div className="job job-3">
-                <h3>Webworks</h3>
-                <h6>Graphic Designer</h6>
+                <div className="job-title">
+                  <i className="fas fa-laptop-code fa-3x" />
+                  <h2>
+                    <b>Self taught</b>
+                  </h2>
+                  <hr />
+                </div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam exercitationem nobis eaque ducimus minus provident
-                  inventore ad consequuntur quis minima.
+                  I am a self taught coder, motivated to gain knowledge and
+                  experience in top technologies for increasing the level of
+                  skills and professionalism.
                 </p>
               </div>
             </div>

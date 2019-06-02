@@ -16,14 +16,30 @@ export default class Contact extends Component {
             <h2 className="sm-heading">This is how you can reach me...</h2>
             <div className="boxes">
               <div>
-                <span className="text-secondary">Email: </span> email@test.com
+                <span className="text-secondary">
+                  <i class="fas fa-at"> Email: </i>
+                </span>{" "}
+                ioan.zicu94@gmail.com
               </div>
               <div>
-                <span className="text-secondary">Phone: </span> (333)-333-555
+                <span className="text-secondary">
+                  <i class="fas fa-mobile-alt"> Phone: </i>
+                </span>{" "}
+                +48 512 701 979
               </div>
               <div>
-                <span className="text-secondary">Address: </span> 50 Main st
-                Bostan MA 0815
+                <span className="text-secondary">
+                  <i class="fas fa-map-marked-alt"> Address: </i>
+                </span>{" "}
+                Poland, Katowice
+              </div>
+              <div>
+                <span className="text-secondary">
+                  <b>
+                    <i class="fab fa-whatsapp"> Whatsapp: </i>
+                  </b>
+                </span>{" "}
+                +48 512 701 979
               </div>
             </div>
           </main>

@@ -7,8 +7,8 @@
   transition: all 0.5s ease-out;
 }
 .menu-btn .btn-line {
-  width: 28px;
-  height: 3px;
+  width: 30px;
+  height: 4px;
   margin: 0 0 5px 0;
   background: #fff;
   transition: all 0.5s ease-out;
@@ -17,13 +17,13 @@
   transform: rotate(180deg);
 }
 .menu-btn.close .btn-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(6px, 6px);
 }
 .menu-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
 .menu-btn.close .btn-line:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .menu {
@@ -77,25 +77,29 @@
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-out;
 }
+
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
 }
+
 .menu .nav-item.current > a {
   color: #eece1a;
 }
 .menu .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 30px;
+  font-size: 2rem;
   text-transform: uppercase;
   padding: 1rem 0;
-  font-weight: 500;
+  font-weight: 600;
   color: #fff;
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
+
 .menu .nav-link:hover {
   color: #eece1a;
+  transform: scale(1.1);
 }
 
 .nav-item:nth-child(1) {
@@ -114,6 +118,10 @@
   transition-delay: 0.4s;
 }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -126,11 +134,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
-body#bg-img {
-  background: url("./img/background.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
 body#bg-img:after {
   content: "";
   position: absolute;
@@ -140,6 +143,12 @@ body#bg-img:after {
   height: 100%;
   z-index: -1;
   background: rgba(68, 68, 68, 0.9);
+}
+
+#bg-img {
+  background: url("./img/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1,
@@ -153,6 +162,12 @@ h2.lg-heading,
 h3.lg-heading {
   font-size: 6rem;
 }
+.subtitle {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.2rem 1rem;
+}
+
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
@@ -184,7 +199,7 @@ main .icons {
   margin-top: 1rem;
 }
 main .icons a {
-  padding: 0.4rem;
+  padding: 0.6rem;
 }
 main .icons a:hover {
   color: #eece1a;
@@ -194,7 +209,7 @@ main#home {
   overflow: hidden;
 }
 main#home h1 {
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .about-info {
@@ -214,6 +229,21 @@ main#home h1 {
 .bio {
   grid-area: bio;
   font-size: 1.5rem;
+  text-align: justify;
+}
+
+.achievements {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.achievements ul {
+  list-style: none;
+}
+
+.achievement-item:hover {
+  text-decoration-line: initial;
 }
 
 .job-1 {
@@ -232,11 +262,25 @@ main#home h1 {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
+  border-radius: 30px 0;
+  text-align: justify;
+}
+
+.job i {
+  padding: 5px;
+}
+
+.job .job-title {
+  text-align: center;
+}
+
+.job p {
+  padding: 10px;
 }
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1rem;
   grid-template-columns: repeat(3, 1fr);
 }
 .projects img {
@@ -296,6 +340,78 @@ main#home h1 {
   background: #c4c4c4;
   color: #333;
 }
+
+.box-icon-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.box-icon {
+  padding: 7%;
+  display: inline-block;
+}
+
+.box-icon i:hover {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
+  color: #eece1a;
+}
+
+/** Code for hover info **/
+
+dfn {
+  /* background: rgba(0, 0, 0, 0.2);
+  border-bottom: dashed 1px rgba(0, 0, 0, 0.8);
+  padding: 0 0.4em; */
+  cursor: help;
+  font-style: normal;
+  position: relative;
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  opacity: 0;
+  width: 230px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 250ms, top 250ms;
+}
+dfn:hover {
+  z-index: 2;
+} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {
+  opacity: 1;
+}
+dfn:hover::after {
+  top: 40px;
+}
+dfn:hover::before {
+  top: 30px;
+}
+
+/** Code for hover info END **/
 
 #main-footer {
   text-align: center;
@@ -357,6 +473,11 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .box-icon {
+    padding: 4%;
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -373,4 +494,98 @@ main#home h1 {
   .projects {
     grid-template-columns: 1fr;
   }
+  .box-icon {
+    padding: 2%;
+    display: inline-block;
+  }
+}
+
+/* DETAILS 28 */
+.dtl28 {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.dtl28 img {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.dtl28 .dtl {
+  background: rgba(51, 51, 51, 0.5);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.dtl28 .dtl h3,
+.dtl28 .dtl p,
+.dtl28 .dtl a {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.dtl28 .dtl h3 {
+  padding: 10px 15px;
+  width: 100%;
+  left: -100%;
+  background: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.dtl28 .dtl p {
+  padding: 0 15px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: #fff;
+  left: 100%;
+  text-indent: 10px;
+}
+.dtl28 .dtl a {
+  margin-right: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #333;
+  left: 100%;
+  float: right;
+  font-size: 13px;
+  padding: 2px 5px;
+  text-align: center;
+  text-decoration: none;
+}
+.dtl28 .dtl a:hover {
+  background: #e6e6e6;
+  border: 1px solid #adadad;
+}
+.dtl28:hover .dtl p,
+.dtl28:hover .dtl a,
+.dtl28:hover .dtl h3 {
+  left: 0;
+}
+.dtl28:hover .dtl {
+  visibility: visible;
+  opacity: 1;
 }
