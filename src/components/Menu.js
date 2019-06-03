@@ -41,33 +41,74 @@ export default class Menu extends Component {
 
           <ul className={this.state.showMenu ? "menu-nav show" : "menu-nav"}>
             <li className={this.state.showMenu ? "nav-item show" : "nav-item"}>
-              <Link to="/" className="nav-link">
-                <i className="fas fa-home" /> Home
+              <Link
+                to="/"
+                className={
+                  this.props.location === "/" ? "nav-link current" : "nav-link"
+                }
+              >
+                <i className="fas fa-home" /> <span>Home</span>
               </Link>
             </li>
 
             <li className={this.state.showMenu ? "nav-item show" : "nav-item"}>
-              <Link to="/skills" className="nav-link">
+              <Link
+                to="/skills"
+                className={
+                  this.props.location === "/skills"
+                    ? "nav-link current"
+                    : "nav-link"
+                }
+              >
                 <i className="fas fa-laptop-code" /> Skills
               </Link>
             </li>
 
             <li className={this.state.showMenu ? "nav-item show" : "nav-item"}>
-              <Link to="/about" className="nav-link">
+              <Link
+                to="/about"
+                className={
+                  this.props.location === "/about"
+                    ? "nav-link current"
+                    : "nav-link"
+                }
+              >
                 <i className="fas fa-user" /> About Me
               </Link>
             </li>
 
             <li className={this.state.showMenu ? "nav-item show" : "nav-item"}>
-              <Link to="/work" className="nav-link">
+              <Link
+                to="/work"
+                className={
+                  this.props.location === "/work"
+                    ? "nav-link current"
+                    : "nav-link"
+                }
+              >
                 <i className="fas fa-project-diagram" /> My Work
               </Link>
             </li>
 
             <li className={this.state.showMenu ? "nav-item show" : "nav-item"}>
-              <Link to="/contact" className="nav-link">
-                <i className="fas fa-phone" /> How To Reach Me
+              <Link
+                to="/contact"
+                className={
+                  this.props.location === "/contact"
+                    ? "nav-link current"
+                    : "nav-link"
+                }
+              >
+                <i className="fas fa-phone" /> Contact Me
               </Link>
+            </li>
+            <li className={this.state.showMenu ? "nav-item show" : "nav-item"}>
+              <a
+                href="https://codepen.io/ioanzicu/full/yRGdWp"
+                className="nav-link"
+              >
+                <i className="fas fa-gamepad" /> Play RGB Game
+              </a>
             </li>
           </ul>
         </nav>

@@ -5,8 +5,8 @@ import Footer from "./Footer";
 export default class Contact extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Menu />
+      <React.Fragment className="page">
+        <Menu location={this.props.location.pathname} />
         <div>
           <main id="contact">
             <h1 className="lg-heading">
@@ -17,26 +17,26 @@ export default class Contact extends Component {
             <div className="boxes">
               <div>
                 <span className="text-secondary">
-                  <i class="fas fa-at"> Email: </i>
+                  <i className="fas fa-at"> Email: </i>
                 </span>{" "}
                 ioan.zicu94@gmail.com
               </div>
               <div>
                 <span className="text-secondary">
-                  <i class="fas fa-mobile-alt"> Phone: </i>
+                  <i className="fas fa-mobile-alt"> Phone: </i>
                 </span>{" "}
                 +48 512 701 979
               </div>
               <div>
                 <span className="text-secondary">
-                  <i class="fas fa-map-marked-alt"> Address: </i>
+                  <i className="fas fa-map-marked-alt"> Address: </i>
                 </span>{" "}
                 Poland, Katowice
               </div>
               <div>
                 <span className="text-secondary">
                   <b>
-                    <i class="fab fa-whatsapp"> Whatsapp: </i>
+                    <i className="fab fa-whatsapp"> Whatsapp: </i>
                   </b>
                 </span>{" "}
                 +48 512 701 979

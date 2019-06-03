@@ -5,8 +5,8 @@ import Footer from "./Footer";
 export default class About extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Menu />
+      <React.Fragment className="page">
+        <Menu location={this.props.location.pathname} />
         <div>
           <main id="about">
             <h1 className="lg-heading">
@@ -25,11 +25,12 @@ export default class About extends Component {
                   <hr />
                 </h2>
                 <p>
-                  I am a young passionate about web technologies, networking and
-                  programming languages like JavaScript (Node.js), PHP, Python
-                  and C#. Able to develop full-stack web application with
-                  RESTful and API functionality. Interested in learning the new
-                  practical skills for increasing problem solving ability.
+                  I am a young geek, passionate about web technologies,
+                  networking and programming languages like JavaScript
+                  (Node.js), PHP, Python and C#. Able to develop full-stack web
+                  application with RESTful and API functionality. Interested in
+                  learning the new practical skills for increasing problem
+                  solving ability.
                 </p>
               </div>
 

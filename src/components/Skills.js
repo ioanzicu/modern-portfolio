@@ -5,8 +5,8 @@ import Footer from "./Footer";
 export default class About extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Menu />
+      <React.Fragment className="page">
+        <Menu location={this.props.location.pathname} />
         <div>
           <main id="about">
             <h1 className="lg-heading">
@@ -16,7 +16,7 @@ export default class About extends Component {
             <div className="achievements">
               <div>
                 <h1>Achievements</h1>
-                <i class="text-secondary fas fa-medal fa-4x" />
+                <i className="text-secondary fas fa-medal fa-4x" />
               </div>
               <ul>
                 <li>
