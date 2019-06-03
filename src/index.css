@@ -360,9 +360,10 @@ main#home h1 {
 /** Code for hover info **/
 
 dfn {
-  /* background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
   border-bottom: dashed 1px rgba(0, 0, 0, 0.8);
-  padding: 0 0.4em; */
+  padding: 0 0.4em;
   cursor: help;
   font-style: normal;
   position: relative;
@@ -372,9 +373,9 @@ dfn::after {
   display: inline;
   position: absolute;
   top: 22px;
-  left: 0;
+  left: -50px;
   opacity: 0;
-  width: 230px;
+  width: 180px;
   font-size: 13px;
   font-weight: 700;
   line-height: 1.5em;
@@ -389,7 +390,7 @@ dfn::before {
   display: block;
   position: absolute;
   top: 12px;
-  left: 20px;
+  left: 45%;
   opacity: 0;
   width: 0;
   height: 0;
@@ -430,6 +431,14 @@ dfn:hover::before {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .details .dtl h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .details .dtl p {
+    font-size: 1rem !important;
   }
 }
 
@@ -478,6 +487,14 @@ dfn:hover::before {
     padding: 4%;
     display: inline-block;
   }
+
+  .details .dtl h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .details .dtl p {
+    font-size: 0.9rem !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -498,10 +515,18 @@ dfn:hover::before {
     padding: 2%;
     display: inline-block;
   }
+
+  .details .dtl h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .details .dtl p {
+    font-size: 1rem !important;
+  }
 }
 
-/* DETAILS 28 */
-.dtl28 {
+/* Project Details 28 */
+.details {
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -509,7 +534,7 @@ dfn:hover::before {
   -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
 }
-.dtl28 img {
+.details img {
   position: relative;
   width: 100%;
   top: 0;
@@ -519,7 +544,7 @@ dfn:hover::before {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.dtl28 .dtl {
+.details .dtl {
   background: rgba(51, 51, 51, 0.5);
   width: 100%;
   position: absolute;
@@ -533,37 +558,39 @@ dfn:hover::before {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.dtl28 .dtl h3,
-.dtl28 .dtl p,
-.dtl28 .dtl a {
+.details .dtl h3,
+.details .dtl p,
+.details .dtl a {
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
-.dtl28 .dtl h3 {
-  padding: 10px 15px;
+.details .dtl h3 {
+  padding: 8px 12px;
   width: 100%;
   left: -100%;
   background: #333;
-  color: #fff;
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 20px;
+  color: #eece1a;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-top: 15px;
   margin-bottom: 10px;
   text-decoration: underline;
 }
-.dtl28 .dtl p {
+.details .dtl p {
   padding: 0 15px;
-  font-size: 14px;
+  font-size: 0.8rem;
   margin-bottom: 10px;
   line-height: 1.2;
   color: #fff;
+  font-weight: 600;
   left: 100%;
   text-indent: 10px;
+  background-color: rgba(63, 62, 62, 0.7);
 }
-.dtl28 .dtl a {
+.details .dtl a {
   margin-right: 15px;
   background: #fff;
   border: 1px solid #ccc;
@@ -576,16 +603,16 @@ dfn:hover::before {
   text-align: center;
   text-decoration: none;
 }
-.dtl28 .dtl a:hover {
+.details .dtl a:hover {
   background: #e6e6e6;
   border: 1px solid #adadad;
 }
-.dtl28:hover .dtl p,
-.dtl28:hover .dtl a,
-.dtl28:hover .dtl h3 {
+.details:hover .dtl p,
+.details:hover .dtl a,
+.details:hover .dtl h3 {
   left: 0;
 }
-.dtl28:hover .dtl {
+.details:hover .dtl {
   visibility: visible;
   opacity: 1;
 }
