@@ -18,7 +18,7 @@ export default class Work extends Component {
         <main id="work">
           <h1 className="lg-heading">
             My
-            <span className="text-secondary">Work</span>
+            <span className="text-secondary"> Work</span>
           </h1>
           <h2 className="sm-heading">Check out some of my projects...</h2>
 

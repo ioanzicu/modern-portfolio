@@ -104,6 +104,11 @@ export default class About extends Component {
                       <i className="fab fa-react fa-4x" />
                     </dfn>
                   </div>
+                  <div className="box-icon">
+                    <dfn data-info="React JS, Redux, React Router">
+                      <img src="../img/redux.png" alt="Redux" />
+                    </dfn>
+                  </div>
                 </div>
               </div>
               <div className="job job-3">

@@ -95,7 +95,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   padding: 1rem 0;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
   transition: all 0.5s ease-out;
@@ -332,10 +332,12 @@ main#home h1 {
 
 .achievements ul {
   list-style: none;
+  font-size: 0.8rem;
 }
 
-.achievement-item:hover {
-  text-decoration-line: initial;
+.achievements ul li h2 a.achievement-item:hover > {
+  font-weight: 500;
+  color: #eece1a;
 }
 
 .job-1 {
@@ -393,14 +395,14 @@ main#home h1 {
   margin-top: 1rem;
 }
 .boxes div {
-  font-size: 2rem;
+  font-size: 1.6rem;
   border: 3px #fff solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
+  width: 45%;
 }
 .boxes div:hover {
-  padding: 0.5rem 1.5rem;
   background: #eece1a;
   color: #000;
 }
@@ -418,7 +420,7 @@ main#home h1 {
   display: inline-block;
 }
 
-.box-icon i:hover {
+.box-icon:hover i {
   transform: scale(1.3);
   transition-duration: 0.5s;
   color: #eece1a;
@@ -512,6 +514,10 @@ dfn:hover::before {
   .details .dtl p {
     font-size: 1rem !important;
   }
+
+  .boxes div {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -564,6 +570,12 @@ dfn:hover::before {
   .details .dtl h3 {
     font-size: 1.2rem !important;
   }
+
+  .boxes div {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
   /* TYPEWRITER EFFECT */
   .typewriter {
     width: auto;
