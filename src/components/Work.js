@@ -126,7 +126,7 @@ export default class Work extends Component {
                     Full Responsive.
                   </p>
                   <a href="https://codepen.io/ioanzicu/full/zQerVK">
-                    <i className="fab fa-github" /> Github
+                    <i className="fab fa-codepen" /> Codepen
                   </a>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default class Work extends Component {
                     Full Responsive.
                   </p>
                   <a href="https://codepen.io/ioanzicu/full/yRzMLZ">
-                    <i className="fab fa-github" /> Github
+                    <i className="fab fa-codepen" /> Codepen
                   </a>
                 </div>
               </div>
