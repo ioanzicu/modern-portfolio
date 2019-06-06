@@ -16,10 +16,12 @@ export default class Contact extends Component {
             <h2 className="sm-heading">This is how you can reach me...</h2>
             <div className="boxes">
               <div>
-                <span className="text-secondary">
-                  <i className="fas fa-at"> Email: </i>
-                </span>{" "}
-                ioan.zicu94@gmail.com
+                <a href="mailto:ioan.zicu94@gmail.com">
+                  <span className="text-secondary">
+                    <i className="fas fa-at"> Email: </i>
+                  </span>{" "}
+                  ioan.zicu94@gmail.com
+                </a>
               </div>
               <div>
                 <span className="text-secondary">
@@ -28,18 +30,22 @@ export default class Contact extends Component {
                 +48 512 701 979
               </div>
               <div>
-                <span className="text-secondary">
-                  <i className="fas fa-map-marked-alt"> Address: </i>
-                </span>{" "}
-                Poland, Katowice
+                <a href="https://www.googleapis.com/geolocation/v1/geolocate?key=">
+                  <span className="text-secondary">
+                    <i className="fas fa-map-marked-alt"> Address: </i>
+                  </span>{" "}
+                  Poland, Katowice
+                </a>
               </div>
               <div>
-                <span className="text-secondary">
-                  <b>
-                    <i className="fab fa-whatsapp"> Whatsapp: </i>
-                  </b>
-                </span>{" "}
-                +48 512 701 979
+                <a href="https://wa.me/48512701979">
+                  <span className="text-secondary">
+                    <b>
+                      <i className="fab fa-whatsapp"> Whatsapp: </i>
+                    </b>
+                  </span>{" "}
+                  +48 512 701 979
+                </a>
               </div>
             </div>
           </main>
