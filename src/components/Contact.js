@@ -24,18 +24,18 @@ export default class Contact extends Component {
                 </a>
               </div>
               <div>
-                <span className="text-secondary">
-                  <i className="fas fa-mobile-alt"> Phone: </i>
-                </span>{" "}
-                +48 512 701 979
+                <a href="tel:48512701979">
+                  <span className="text-secondary">
+                    <i className="fas fa-mobile-alt"> Phone: </i>
+                  </span>{" "}
+                  +48 512 701 979
+                </a>
               </div>
               <div>
-                <a href="https://www.googleapis.com/geolocation/v1/geolocate?key=">
-                  <span className="text-secondary">
-                    <i className="fas fa-map-marked-alt"> Address: </i>
-                  </span>{" "}
-                  Poland, Katowice
-                </a>
+                <span className="text-secondary">
+                  <i className="fas fa-map-marked-alt"> Address: </i>
+                </span>{" "}
+                Poland, Katowice
               </div>
               <div>
                 <a href="https://wa.me/48512701979">
