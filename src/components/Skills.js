@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Menu from "./Menu";
 import Footer from "./Footer";
+import reduxIcon from "../img/redux.png";
 
 export default class About extends Component {
   render() {
@@ -100,13 +101,13 @@ export default class About extends Component {
                     </dfn>
                   </div>
                   <div className="box-icon">
-                    <dfn data-info="React JS, Redux, React Router">
+                    <dfn data-info="React JS, React Router">
                       <i className="fab fa-react fa-4x" />
                     </dfn>
                   </div>
                   <div className="box-icon">
-                    <dfn data-info="React JS, Redux, React Router">
-                      <img src="../img/redux.png" alt="Redux" />
+                    <dfn data-info="Redux">
+                      <img className="redux-icon" src={reduxIcon} alt="Redux" />
                     </dfn>
                   </div>
                 </div>

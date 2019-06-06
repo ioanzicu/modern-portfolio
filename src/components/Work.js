@@ -27,7 +27,7 @@ export default class Work extends Component {
               <div className="details">
                 <img src={img1} alt="" />
                 <div className="dtl">
-                  <h3>Yelp Camp </h3>
+                  <h3>Yelp Camp</h3>
                   <p>
                     Implemented with HTML5, CSS3, Bootstrap 3, NodeJS, API Maps
                     and MongoDB. Allow to post camp offers around the world.
