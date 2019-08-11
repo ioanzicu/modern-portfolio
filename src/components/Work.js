@@ -9,6 +9,7 @@ import img4 from '../img/projects/project4.jpg'
 import img5 from '../img/projects/project5.jpg'
 import img6 from '../img/projects/project6.jpg'
 import img7 from '../img/projects/project7.jpg'
+import img8 from '../img/projects/project8.jpg'
 
 export default class Work extends Component {
   render() {
@@ -47,6 +48,26 @@ export default class Work extends Component {
               <div className='details'>
                 <img src={img2} alt='' />
                 <div className='dtl'>
+                  <h3>Burger Builder</h3>
+                  <p>
+                    Developed with React, React Router, Redux and Firebase.
+                    Allow to build burger and order it. Support also, user
+                    authentication.
+                  </p>
+                  <a href='https://my-burger-ecbd4.firebaseapp.com/checkout'>
+                    <i className='fas fa-eye' /> Project{' '}
+                  </a>
+                  <a href='https://github.com/ioanzicu/react-burger'>
+                    <i className='fab fa-github' /> Github
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className='details'>
+                <img src={img3} alt='' />
+                <div className='dtl'>
                   <h3>Chatt App</h3>
                   <p>
                     Implemented with HTML5, CSS3 and NodeJS sockets. Allow
@@ -62,9 +83,10 @@ export default class Work extends Component {
                 </div>
               </div>
             </div>
+
             <div>
               <div className='details'>
-                <img src={img3} alt='' />
+                <img src={img4} alt='' />
                 <div className='dtl'>
                   <h3>Phones E-Commerce</h3>
                   <p>
@@ -83,7 +105,7 @@ export default class Work extends Component {
             </div>
             <div>
               <div className='details'>
-                <img src={img4} alt='' />
+                <img src={img5} alt='' />
                 <div className='dtl'>
                   <h3>Cart App</h3>
                   <p>
@@ -102,7 +124,7 @@ export default class Work extends Component {
             </div>
             <div>
               <div className='details'>
-                <img src={img5} alt='' />
+                <img src={img6} alt='' />
                 <div className='dtl'>
                   <h3>Iro's Bicycle Warehouse</h3>
                   <p>
@@ -117,7 +139,7 @@ export default class Work extends Component {
             </div>
             <div>
               <div className='details'>
-                <img src={img6} alt='' />
+                <img src={img7} alt='' />
                 <div className='dtl'>
                   <h3>The Steel Chords</h3>
                   <p>
@@ -133,7 +155,7 @@ export default class Work extends Component {
             </div>
             <div>
               <div className='details'>
-                <img src={img7} alt='' />
+                <img src={img8} alt='' />
                 <div className='dtl'>
                   <h3>Survey Form</h3>
                   <p>

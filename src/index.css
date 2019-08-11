@@ -250,6 +250,7 @@ h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   background: lighten #444, 2;
+  font-family: 'Capriola', sans-serif;
 }
 
 a {
@@ -321,10 +322,7 @@ main#home h1 {
 
 .achievements ul a.achievement-item:hover {
   color: #eece1a;
-  font-weight: 500;
-  border: 1px solid white;
-  border-radius: 4px;
-  padding: 3px;
+  text-decoration: underline;
 }
 
 .job-1 {
@@ -384,6 +382,7 @@ main#home h1 {
 .boxes div {
   font-size: 1.6rem;
   border: 3px #fff solid;
+  border-radius: 10px;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
@@ -489,6 +488,7 @@ dfn:hover::before {
   background: #2b2b2b;
   color: #fff;
   height: 60px;
+  font-family: 'Capriola', sans-serif;
 }
 
 @media screen and (min-width: 1171px) {
@@ -504,10 +504,6 @@ dfn:hover::before {
 
   .details .dtl h3 {
     font-size: 1.2rem !important;
-  }
-
-  .details .dtl p {
-    font-size: 1rem !important;
   }
 
   .boxes div {
@@ -678,15 +674,15 @@ dfn:hover::before {
   left: -100%;
   background: #333;
   color: #eece1a;
-  font-size: 1.3rem;
+  font-size: 1rem !important;
   font-weight: 800;
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: underline;
 }
 .details .dtl p {
-  padding: 0 15px;
-  font-size: 0.8rem;
+  padding: 0 10px;
+  font-size: 0.7rem;
   margin-bottom: 10px;
   line-height: 1.2;
   color: #fff;

@@ -15,7 +15,7 @@ export default class About extends Component {
             </h1>
             <div className='about-info'>
               <img
-                src='static/media/portrait.f4b2a5d7.jpg'
+                src='/static/media/portrait.91f8acd9.jpg'
                 alt='Ioan Zicu'
                 className='bio-image'
               />
