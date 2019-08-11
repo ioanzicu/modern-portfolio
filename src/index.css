@@ -53,8 +53,6 @@
   width: 50%;
   height: 100vh;
   overflow: hidden;
-}
-.menu-nav {
   margin: 0;
   padding: 0;
   background: #373737;
@@ -158,6 +156,8 @@ h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
   font-size: 6rem;
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 0.15rem;
 }
 .subtitle {
   font-size: 1rem;
@@ -172,7 +172,7 @@ h3.lg-heading {
 
 /* TYPEWRITER EFFECT START */
 .typewriter {
-  width: 675px;
+  width: 35rem;
 }
 
 .typewriter p {
@@ -441,7 +441,7 @@ dfn::after {
   top: 22px;
   left: -50px;
   opacity: 0;
-  width: 180px;
+  /* width: 180px; */
   font-size: 13px;
   font-weight: 700;
   line-height: 1.5em;
@@ -573,7 +573,7 @@ dfn:hover::before {
 
   /* TYPEWRITER EFFECT */
   .typewriter {
-    width: auto;
+    width: 30rem;
   }
   .typewriter p {
     letter-spacing: 0.01em;

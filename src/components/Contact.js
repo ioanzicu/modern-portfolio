@@ -1,49 +1,49 @@
-import React, { Component } from "react";
-import Menu from "./Menu";
-import Footer from "./Footer";
+import React, { Component } from 'react'
+import Menu from './Menu'
+import Footer from './Footer'
 
 export default class Contact extends Component {
   render() {
     return (
-      <React.Fragment className="page">
-        <Menu location={this.props.location.pathname} />
+      <React.Fragment>
+        <Menu location={this.props.location.pathname} className='page' />
         <div>
-          <main id="contact">
-            <h1 className="lg-heading">
+          <main id='contact'>
+            <h1 className='lg-heading'>
               Contact
-              <span className="text-secondary"> Me</span>
+              <span className='text-secondary'> Me</span>
             </h1>
-            <h2 className="sm-heading">This is how you can reach me...</h2>
-            <div className="boxes">
+            <h2 className='sm-heading'>This is how you can reach me...</h2>
+            <div className='boxes'>
               <div>
-                <a href="mailto:ioan.zicu94@gmail.com">
-                  <span className="text-secondary">
-                    <i className="fas fa-at"> Email: </i>
-                  </span>{" "}
+                <a href='mailto:ioan.zicu94@gmail.com'>
+                  <span className='text-secondary'>
+                    <i className='fas fa-at'> Email: </i>
+                  </span>{' '}
                   ioan.zicu94@gmail.com
                 </a>
               </div>
               <div>
-                <a href="tel:48512701979">
-                  <span className="text-secondary">
-                    <i className="fas fa-mobile-alt"> Phone: </i>
-                  </span>{" "}
+                <a href='tel:48512701979'>
+                  <span className='text-secondary'>
+                    <i className='fas fa-mobile-alt'> Phone: </i>
+                  </span>{' '}
                   +48 512 701 979
                 </a>
               </div>
               <div>
-                <span className="text-secondary">
-                  <i className="fas fa-map-marked-alt"> Address: </i>
-                </span>{" "}
+                <span className='text-secondary'>
+                  <i className='fas fa-map-marked-alt'> Address: </i>
+                </span>{' '}
                 Poland, Katowice
               </div>
               <div>
-                <a href="https://wa.me/48512701979">
-                  <span className="text-secondary">
+                <a href='https://wa.me/48512701979'>
+                  <span className='text-secondary'>
                     <b>
-                      <i className="fab fa-whatsapp"> Whatsapp: </i>
+                      <i className='fab fa-whatsapp'> Whatsapp: </i>
                     </b>
-                  </span>{" "}
+                  </span>{' '}
                   +48 512 701 979
                 </a>
               </div>
@@ -53,6 +53,6 @@ export default class Contact extends Component {
 
         <Footer />
       </React.Fragment>
-    );
+    )
   }
 }

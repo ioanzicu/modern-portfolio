@@ -1,26 +1,26 @@
-import React, { Component } from "react";
-import Menu from "./Menu";
-import Footer from "./Footer";
+import React, { Component } from 'react'
+import Menu from './Menu'
+import Footer from './Footer'
 
 export default class About extends Component {
   render() {
     return (
-      <React.Fragment className="page">
-        <Menu location={this.props.location.pathname} />
+      <React.Fragment>
+        <Menu location={this.props.location.pathname} className='page' />
         <div>
-          <main id="about">
-            <h1 className="lg-heading">
+          <main id='about'>
+            <h1 className='lg-heading'>
               About
-              <span className="text-secondary"> Me</span>
+              <span className='text-secondary'> Me</span>
             </h1>
-            <div className="about-info">
+            <div className='about-info'>
               <img
-                src="static/media/portrait.f4b2a5d7.jpg"
-                alt="Ioan Zicu"
-                className="bio-image"
+                src='static/media/portrait.f4b2a5d7.jpg'
+                alt='Ioan Zicu'
+                className='bio-image'
               />
-              <div className="bio">
-                <h2 className="text-secondary">
+              <div className='bio'>
+                <h2 className='text-secondary'>
                   Let me tell you a few things...
                   <hr />
                 </h2>
@@ -34,9 +34,9 @@ export default class About extends Component {
                 </p>
               </div>
 
-              <div className="job job-1">
-                <div className="job-title">
-                  <i className="fas fa-hands-helping fa-3x" />
+              <div className='job job-1'>
+                <div className='job-title'>
+                  <i className='fas fa-hands-helping fa-3x' />
                   <h2>
                     <b>Voluntary</b>
                     <hr />
@@ -49,9 +49,9 @@ export default class About extends Component {
                 </p>
               </div>
 
-              <div className="job job-2">
-                <div className="job-title">
-                  <i className="fas fa-users fa-3x" />
+              <div className='job job-2'>
+                <div className='job-title'>
+                  <i className='fas fa-users fa-3x' />
                   <h2>
                     <b>Extracurricular activity</b>
                   </h2>
@@ -65,9 +65,9 @@ export default class About extends Component {
                 </p>
               </div>
 
-              <div className="job job-3">
-                <div className="job-title">
-                  <i className="fas fa-laptop-code fa-3x" />
+              <div className='job job-3'>
+                <div className='job-title'>
+                  <i className='fas fa-laptop-code fa-3x' />
                   <h2>
                     <b>Self taught</b>
                   </h2>
@@ -85,6 +85,6 @@ export default class About extends Component {
 
         <Footer />
       </React.Fragment>
-    );
+    )
   }
 }
