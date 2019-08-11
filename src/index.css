@@ -319,9 +319,12 @@ main#home h1 {
   font-size: 0.8rem;
 }
 
-.achievements ul li h2 a.achievement-item:hover > {
-  font-weight: 500;
+.achievements ul a.achievement-item:hover {
   color: #eece1a;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 3px;
 }
 
 .job-1 {

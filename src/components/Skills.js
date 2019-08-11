@@ -17,6 +17,7 @@ export default class About extends Component {
             <div className='achievements'>
               <div>
                 <h1>Achievements</h1>
+                <hr />
                 <i className='text-secondary fas fa-medal fa-4x' />
               </div>
               <ul>
