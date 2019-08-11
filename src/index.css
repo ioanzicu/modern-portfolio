@@ -1,0 +1,745 @@
+.page {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+  width: 30px;
+  height: 4px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  transition: all 0.5s ease-out;
+}
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: hidden;
+}
+.menu.show {
+  visibility: visible;
+}
+.menu-branding,
+.menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+.menu-nav {
+  margin: 0;
+  padding: 0;
+  background: #373737;
+  list-style: none;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.5s ease-out;
+}
+.menu-nav.show {
+  transform: translate3d(0, 0, 0);
+}
+.menu-branding {
+  background: #444;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.5s ease-out;
+}
+.menu-branding.show {
+  transform: translate3d(0, 0, 0);
+}
+.menu-branding .portrait {
+  width: 250px;
+  height: 250px;
+  background: url('./img/portrait.jpg');
+  border-radius: 50%;
+  border: solid 3px #eece1a;
+}
+.menu .nav-item {
+  transform: translate3d(600px, 0, 0);
+  transition: all 0.5s ease-out;
+}
+
+.menu .nav-item.show {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+.menu .nav-link.current {
+  color: #eece1a;
+  transform: scale(1.1);
+}
+
+.menu .nav-link:hover {
+  color: #eece1a;
+  transform: scale(1.1);
+}
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.15s;
+}
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.25s;
+}
+
+.nav-item:nth-child(5) {
+  transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(6) {
+  transition-delay: 0.35s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #444;
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 6rem;
+}
+.subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1rem;
+}
+
+.subtitle i {
+  margin: 5px;
+  margin-top: -5px;
+}
+
+/* TYPEWRITER EFFECT START */
+.typewriter {
+  width: 675px;
+}
+
+.typewriter p {
+  font-family: monospace;
+  letter-spacing: 0.08em;
+  margin: auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: 0.2em solid #eece1a;
+  animation: typing 4s steps(35, end), blinking-cursor 0.6s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #eece1a;
+  }
+}
+
+/* TYPEWRITER EFFECT END */
+
+/* SMILE ANIMATION START */
+
+.smile-section {
+  position: relative;
+}
+
+.smile-section i {
+  position: absolute;
+}
+
+.top-smile {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* SMILE ANIMATION END */
+
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: lighten #444, 2;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.text-secondary {
+  color: #eece1a;
+}
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+}
+main .icons {
+  margin-top: 1rem;
+}
+main .icons a {
+  padding: 0.6rem;
+}
+main .icons a:hover {
+  color: #eece1a;
+  transition: all 0.5s ease-out;
+}
+main#home {
+  overflow: hidden;
+}
+main#home h1 {
+  margin-top: 15vh;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #eece1a 3px solid;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.achievements {
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.achievements ul {
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.achievements ul li h2 a.achievement-item:hover > {
+  font-weight: 500;
+  color: #eece1a;
+}
+
+.job-1 {
+  grid-area: job1;
+}
+
+.job-2 {
+  grid-area: job2;
+}
+
+.job-3 {
+  grid-area: job3;
+}
+
+.job {
+  background: #515151;
+  padding: 0.5rem;
+  border-bottom: #eece1a 5px solid;
+  border-radius: 30px 0;
+  text-align: justify;
+}
+
+.job i {
+  padding: 5px;
+}
+
+.job .job-title {
+  text-align: center;
+}
+
+.job p {
+  padding: 10px;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.projects img {
+  width: 100%;
+  border: 3px #fff solid;
+}
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  transition: all 0.5s ease-out;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+.boxes div {
+  font-size: 1.6rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-out;
+  width: 45%;
+}
+.boxes div:hover {
+  background: #eece1a;
+}
+.boxes div:hover span {
+  color: #000;
+}
+
+.box-icon-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.box-icon {
+  padding: 7%;
+  display: inline-block;
+}
+
+.box-icon:hover i {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
+  color: #eece1a;
+}
+
+.box-icon:hover dfn {
+  padding-bottom: 1rem;
+  transition-duration: 0.5s;
+}
+
+.redux-icon {
+  width: 60px;
+}
+
+.box-icon:hover img {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
+}
+
+/** Code for hover info **/
+
+dfn {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: dashed 1px rgba(0, 0, 0, 0.8);
+  padding: 0 0.5em;
+  cursor: help;
+  font-style: normal;
+  position: relative;
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px;
+  left: -50px;
+  opacity: 0;
+  width: 180px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 45%;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 250ms, top 250ms;
+}
+dfn:hover {
+  z-index: 2;
+} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {
+  opacity: 1;
+}
+dfn:hover::after {
+  top: 40px;
+}
+dfn:hover::before {
+  top: 30px;
+}
+
+/** Code for hover info END **/
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px;
+}
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .details .dtl h3 {
+    font-size: 1.2rem !important;
+  }
+
+  .details .dtl p {
+    font-size: 1rem !important;
+  }
+
+  .boxes div {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+    margin-top: 1.2rem;
+    font-size: 4.5rem;
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu-nav.show,
+  div.menu-branding.show {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+  }
+  .menu-branding .portrait {
+    background: url('./img/portrait_small.jpg');
+    width: 150px;
+    height: 150px;
+  }
+  .menu .nav-link {
+    font-size: 1.1rem;
+  }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .box-icon {
+    padding: 4%;
+    display: inline-block;
+  }
+  .details .dtl h3 {
+    font-size: 1rem !important;
+  }
+
+  .boxes div {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+
+  /* TYPEWRITER EFFECT */
+  .typewriter {
+    width: auto;
+  }
+  .typewriter p {
+    letter-spacing: 0.01em;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 2rem;
+  }
+  main #home h1 {
+    margin-top: 10vh;
+  }
+  main .lg-heading {
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .box-icon {
+    padding: 2%;
+    display: inline-block;
+  }
+
+  .details .dtl h3 {
+    font-size: 1rem !important;
+  }
+
+  .details .dtl p {
+    font-size: 0.8rem !important;
+  }
+
+  .boxes div {
+    font-size: 0.8rem;
+    border: 3px #fff solid;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease-out;
+  }
+
+  /* TYPEWRITER EFFECT */
+  .typewriter p {
+    visibility: hidden;
+  }
+
+  .typewriter p .small {
+    visibility: hidden;
+  }
+}
+
+/* PROJECT DETAILS (HOVER EFFECT) START */
+
+.details {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.details img {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.details .dtl {
+  background: rgba(51, 51, 51, 0.5);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.details .dtl h3,
+.details .dtl p,
+.details .dtl a {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.details .dtl h3 {
+  padding: 5px 15px;
+  width: 100%;
+  left: -100%;
+  background: #333;
+  color: #eece1a;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.details .dtl p {
+  padding: 0 15px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 600;
+  left: 100%;
+  text-indent: 10px;
+  background-color: rgba(63, 62, 62, 0.7);
+}
+.details .dtl a {
+  margin-right: 15px;
+  background: #fff;
+  border-radius: 5px;
+  color: #333;
+  left: 100%;
+  float: right;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+}
+.details .dtl a:hover {
+  background: #eece1a;
+  color: #000;
+}
+.details:hover .dtl p,
+.details:hover .dtl a,
+.details:hover .dtl h3 {
+  left: 0;
+}
+.details:hover .dtl {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* PAGE FADE START */
+
+/* simple - enter transition 300ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+/* PAGE FADE END */
