@@ -1,58 +1,61 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Menu from './Menu'
 import Footer from './Footer'
 
-export default class Contact extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Menu location={this.props.location.pathname} className='page' />
-        <div>
-          <main id='contact'>
-            <h1 className='lg-heading'>
-              Contact
-              <span className='text-secondary'> Me</span>
-            </h1>
-            <h2 className='sm-heading'>This is how you can reach me...</h2>
-            <div className='boxes'>
-              <div>
-                <a href='mailto:ioan.zicu94@gmail.com'>
-                  <span className='text-secondary'>
-                    <i className='fas fa-at'> Email: </i>
-                  </span>{' '}
-                  ioan.zicu94@gmail.com
-                </a>
-              </div>
-              <div>
-                <a href='tel:48512701979'>
-                  <span className='text-secondary'>
-                    <i className='fas fa-mobile-alt'> Phone: </i>
-                  </span>{' '}
-                  +48 512 701 979
-                </a>
-              </div>
-              <div>
-                <span className='text-secondary'>
-                  <i className='fas fa-map-marked-alt'> Address: </i>
-                </span>{' '}
-                Poland, Katowice
-              </div>
-              <div>
-                <a href='https://wa.me/48512701979'>
-                  <span className='text-secondary'>
-                    <b>
-                      <i className='fab fa-whatsapp'> Whatsapp: </i>
-                    </b>
-                  </span>{' '}
-                  +48 512 701 979
-                </a>
-              </div>
-            </div>
-          </main>
-        </div>
-
-        <Footer />
-      </React.Fragment>
-    )
+const contacts = [
+  {
+    title: 'Email',
+    icon: 'fas fa-at',
+    value: 'ioan.zicu94@gmail.com',
+    link: 'mailto:ioan.zicu94@gmail.com'
+  },
+  {
+    title: 'Phone',
+    icon: 'fas fa-mobile-alt',
+    value: '+48 512 701 979',
+    link: 'tel:48512701979'
+  },
+  {
+    title: 'Address',
+    icon: 'fas fa-map-marked-alt',
+    value: 'Poland, Katowice',
+    link: ''
+  },
+  {
+    title: 'Whatsapp',
+    icon: 'fab fa-whatsapp',
+    value: '+48 512 701 979',
+    link: 'https://wa.me/48512701979'
   }
-}
+]
+
+const Contact = ({ location }) => (
+  <>
+    <Menu location={location.pathname} className='page' />
+    <div>
+      <main id='contact'>
+        <h1 className='lg-heading'>
+          Contact
+          <span className='text-secondary'> Me</span>
+        </h1>
+        <h2 className='sm-heading'>This is how you can reach me...</h2>
+        <div className='boxes'>
+          {contacts.map(({ link, icon, title, value }) => (
+            <div key={title}>
+              <a href={link}>
+                <span className='text-secondary'>
+                  <i className={icon}> {title}: </i>
+                </span>{' '}
+                {value}
+              </a>
+            </div>
+          ))}
+        </div>
+      </main>
+    </div>
+
+    <Footer />
+  </>
+)
+
+export default Contact
