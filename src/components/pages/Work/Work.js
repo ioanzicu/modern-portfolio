@@ -1,15 +1,17 @@
 import React from 'react'
-import Menu from './Menu'
-import Footer from './Footer'
+import Menu from '../Menu/Menu'
+import Footer from '../Footer/Footer'
+import Heading from '../../Heading/Heading'
+import './Work.css'
 
-import img1 from '../img/projects/project1.jpg'
-import img2 from '../img/projects/project2.jpg'
-import img3 from '../img/projects/project3.jpg'
-import img4 from '../img/projects/project4.jpg'
-import img5 from '../img/projects/project5.jpg'
-import img6 from '../img/projects/project6.jpg'
-import img7 from '../img/projects/project7.jpg'
-import img8 from '../img/projects/project8.jpg'
+import img1 from '../../../img/projects/project1.jpg'
+import img2 from '../../../img/projects/project2.jpg'
+import img3 from '../../../img/projects/project3.jpg'
+import img4 from '../../../img/projects/project4.jpg'
+import img5 from '../../../img/projects/project5.jpg'
+import img6 from '../../../img/projects/project6.jpg'
+import img7 from '../../../img/projects/project7.jpg'
+import img8 from '../../../img/projects/project8.jpg'
 
 const projects = [
   {
@@ -86,43 +88,53 @@ const projects = [
   }
 ]
 
+const Project = ({ img, title, description, github, previewLink, codePen }) => (
+  <div className='project'>
+    <img src={img} alt={title} />
+    <div className='details'>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      {previewLink && (
+        <a href={previewLink}>
+          <i className='fas fa-eye' /> Project
+        </a>
+      )}
+      {github && (
+        <a href={github}>
+          <i className='fab fa-github' /> Github
+        </a>
+      )}
+      {codePen && (
+        <a href={codePen}>
+          <i className='fab fa-codepen' /> Codepen
+        </a>
+      )}
+    </div>
+  </div>
+)
+
 const Work = ({ location }) => (
   <>
     <Menu location={location.pathname} className='page' />
     <main id='work'>
-      <h1 className='lg-heading'>
-        My
-        <span className='text-secondary'> Work</span>
-      </h1>
-      <h2 className='sm-heading'>Check out some of my projects...</h2>
+      <Heading
+        title='My'
+        secondaryTitle='Work'
+        subtitle='Check out some of my projects...'
+      />
 
       <div className='projects'>
         {projects.map(
           ({ img, title, description, github, previewLink, codePen }) => (
-            <div>
-              <div className='details'>
-                <img src={img} alt='' />
-                <div className='dtl'>
-                  <h3>{title}</h3>
-                  <p>{description}</p>
-                  {previewLink && (
-                    <a href={previewLink}>
-                      <i className='fas fa-eye' /> Project
-                    </a>
-                  )}
-                  {github && (
-                    <a href={github}>
-                      <i className='fab fa-github' /> Github
-                    </a>
-                  )}
-                  {codePen && (
-                    <a href={codePen}>
-                      <i className='fab fa-codepen' /> Codepen
-                    </a>
-                  )}
-                </div>
-              </div>
-            </div>
+            <Project
+              key={title}
+              img={img}
+              title={title}
+              description={description}
+              github={github}
+              previewLink={previewLink}
+              codePen={codePen}
+            />
           )
         )}
       </div>

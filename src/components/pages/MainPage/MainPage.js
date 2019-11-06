@@ -1,35 +1,37 @@
 import React from 'react'
-import Menu from './Menu'
+import Menu from '../Menu/Menu'
+import Heading from '../../Heading/Heading'
+import './MainPage.css'
+
+const Typewriter = () => (
+  <div className='typewriter '>
+    <p className='subtitle'>
+      geek + smart + curious + creative + ingenious + amiable ={' '}
+      <span className='text-secondary'>
+        <b>
+          ME
+          <span className='smile-section'>
+            <i className='top-smile fas fa-smile-wink fa-2x' />
+            <i className='bottom-smile fas fa-smile fa-2x' />
+          </span>
+        </b>
+      </span>
+    </p>
+  </div>
+)
 
 const MainPage = ({ location }) => (
   <>
     <Menu location={location.pathname} className='page' />
-
     <main id='home'>
-      <h1 className='lg-heading'>
-        Zîcu
-        <span className='text-secondary'> Ioan</span>
-      </h1>
+      <Heading title='Ioan' secondaryTitle='Zîcu' />
 
-      <div className='typewriter'>
-        <p className='subtitle'>
-          geek + smart + curious + creative + ingenious + amiable ={' '}
-          <span className='text-secondary'>
-            <b>
-              ME
-              <span className='smile-section'>
-                <i className='top-smile fas fa-smile-wink fa-2x' />
-                <i className='bottom-smile fas fa-smile fa-2x' />
-              </span>
-            </b>
-          </span>
-        </p>
-      </div>
+      <Typewriter />
 
-      <h2 className='sm-heading'>
+      <h2 className='sm-heading mt-1'>
         Full Stack Developer, Programmer, Designer & Good Guy
       </h2>
-      <div className='icons'>
+      <div className='icons mt-2'>
         <a
           href='https://codepen.io/ioanzicu/'
           title='See my projects on Codepen'>

@@ -1,0 +1,26 @@
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'bioimage bio bio' 'card1 card2 card3';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #eece1a 3px solid;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.4rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'card1' 'card2' 'card3';
+    grid-template-columns: 1fr;
+  }
+}

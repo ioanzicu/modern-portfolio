@@ -1,0 +1,17 @@
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 6rem;
+  font-family: 'Bubblegum Sans', cursive;
+  letter-spacing: 0.15rem;
+}
+
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding: 0.2rem 1rem;
+  background: lighten #444, 2;
+  font-family: 'Capriola', sans-serif;
+}

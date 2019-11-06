@@ -1,0 +1,13 @@
+.achievements {
+  text-align: center;
+}
+
+.achievements div {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.achievements div a.achievement-item:hover {
+  color: #eece1a;
+  text-decoration: underline;
+}

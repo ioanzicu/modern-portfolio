@@ -1,0 +1,80 @@
+/* Icons */
+
+.box-icon {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.box-icon:hover i {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
+  color: #eece1a;
+}
+
+.box-icon:hover dfn {
+  /* padding-bottom: 1rem; */
+  transition-duration: 0.5s;
+}
+
+.box-icon:hover img {
+  transform: scale(1.3);
+  transition-duration: 0.5s;
+}
+
+/* Tooltip Info Start **/
+
+/* Icon shadow */
+dfn {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: dashed 1px rgba(0, 0, 0, 0.8);
+  padding: 0 0.5em;
+  cursor: help;
+  font-style: normal;
+  position: relative;
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px;
+  left: -5%;
+  opacity: 0;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  pointer-events: none; /* This prevents the box from apearing when hovered. */
+  transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 45%;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 250ms, top 250ms;
+}
+dfn:hover {
+  z-index: 2;
+} /* Keeps the info boxes on top of other elements */
+dfn:hover::after,
+dfn:hover::before {
+  opacity: 1;
+}
+dfn:hover::after {
+  top: 40px;
+}
+dfn:hover::before {
+  top: 30px;
+}
+
+/** Tooltip END **/

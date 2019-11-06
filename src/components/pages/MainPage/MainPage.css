@@ -1,0 +1,134 @@
+main {
+  padding: 1rem 4rem 4rem 4rem;
+  min-height: 100vh;
+}
+main .icons a {
+  padding: 1rem;
+}
+main .icons a:hover {
+  color: #eece1a;
+  transition: all 0.5s ease-out;
+}
+main#home {
+  overflow: hidden;
+}
+main#home h1 {
+  margin-top: 20vh;
+}
+
+/* TYPEWRITER EFFECT START */
+.typewriter {
+  width: 560px;
+}
+
+.typewriter p {
+  font-size: 1rem;
+  font-family: monospace;
+  letter-spacing: 0.08em;
+  margin: auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: 0.2em solid #eece1a;
+  animation: typing 4s steps(35, end), blinking-cursor 0.6s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #eece1a;
+  }
+}
+
+/* TYPEWRITER EFFECT END */
+
+/* SMILE ANIMATION START */
+
+.smile-section {
+  position: relative;
+}
+
+.smile-section i {
+  position: absolute;
+}
+
+.top-smile {
+  animation-name: fade;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* SMILE ANIMATION END */
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-size: 4.5rem;
+  }
+
+  /* TYPEWRITER EFFECT */
+  .typewriter {
+    width: 30rem;
+  }
+  .typewriter p {
+    letter-spacing: 0.01em;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    padding: 2rem;
+  }
+  main #home h1 {
+    margin-top: 10vh;
+  }
+  main .lg-heading {
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+
+  /* TYPEWRITER EFFECT */
+  .typewriter p {
+    visibility: hidden;
+  }
+
+  .typewriter p .small {
+    visibility: hidden;
+  }
+}

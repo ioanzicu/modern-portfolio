@@ -1,0 +1,45 @@
+/* START card Card used in About and Work pages */
+
+.card-1 {
+  grid-area: card1;
+}
+
+.card-2 {
+  grid-area: card2;
+}
+
+.card-3 {
+  grid-area: card3;
+}
+
+.card {
+  background: var(--carbon);
+  -webkit-box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75);
+  padding: 0.5rem;
+  border-bottom: #eece1a 5px solid;
+  border-radius: 30px 0;
+  text-align: justify;
+}
+
+.card i {
+  padding: 5px;
+}
+
+.card .card-title {
+  text-align: center;
+}
+
+.card p {
+  padding: 10px;
+}
+
+/* END card Card */
+
+/* Icons */
+
+.box-icon-wrapper {
+  position: relative;
+  text-align: center;
+}
