@@ -5,24 +5,25 @@
   --blue-green: linear-gradient(135deg, #184e68 0%, #57ca85 100%);
   --dark-blue: linear-gradient(135deg, #09203f 0%, #537895 100%);
   box-sizing: border-box;
+  --second-color: #21a7f5;
 }
 
 @font-face {
-  font-family: 'Bubblegum Sans';
-  src: url('./fonts/BubblegumSans-Regular.ttf');
+  font-family: "Bubblegum Sans";
+  src: url("./fonts/BubblegumSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Capriola';
-  src: url('./fonts/Capriola-Regular.ttf');
+  font-family: "Capriola";
+  src: url("./fonts/Capriola-Regular.ttf");
 }
 
 body {
-  background: var(--carbon);
+  background: var(--violet);
   color: #fff;
   height: auto;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
