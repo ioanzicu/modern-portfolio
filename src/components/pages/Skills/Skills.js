@@ -8,14 +8,15 @@ import "./Skills.css";
 
 const Achievements = () => (
   <div className="achievements">
-    {achievements.map(({ url, title }, index) => (
-      <div>
-        {index + 1}.{" "}
-        <a className="achievement-item" href={url}>
-          {title}
-        </a>
-      </div>
-    ))}
+    {achievements &&
+      achievements.map(({ url, title }, index) => (
+        <div key={url}>
+          {index + 1}.{" "}
+          <a className="achievement-item" href={url}>
+            {title}
+          </a>
+        </div>
+      ))}
   </div>
 );
 
@@ -34,8 +35,13 @@ const Skills = ({ location }) => {
           <Achievements />
           <div className="about-info">
             {skillsConfig &&
-              skillsConfig.map(({ title, icons }, index) => (
-                <SkillsCard title={title} icons={icons} cardNr={index + 1} />
+              skillsConfig.map(({ id, title, icons }, index) => (
+                <SkillsCard
+                  key={id}
+                  title={title}
+                  icons={icons}
+                  cardNr={index + 1}
+                />
               ))}
           </div>
         </main>
