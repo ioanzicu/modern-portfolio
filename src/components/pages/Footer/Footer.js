@@ -1,8 +1,15 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
-const Footer = () => (
-  <footer id='main-footer'>Copyright &copy; 2019. All right reserved.</footer>
-)
+const Footer = () => {
+  const date = new Date();
+  const year = 1900 + date.getYear();
 
-export default Footer
+  return (
+    <footer id="main-footer">
+      Copyright &copy; {year}. All right reserved.
+    </footer>
+  );
+};
+
+export default Footer;
