@@ -102,8 +102,12 @@ const skillsConfig = [
 const achievements = [
   {
     url:
-      "https://www.freecodecamp.org/certification/fccdeddf4b2-8af4-4000-95ab-864887c0afab/responsive-web-design",
-    title: "Responsive Web Design"
+      "https://www.freecodecamp.org/certification/fccdeddf4b2-8af4-4000-95ab-864887c0afab/front-end-libraries",
+    title: "Front End Libraries"
+  },
+  {
+    url: "https://certificates.saylor.org/144602ad-4262-48ba-bd43-e75da618e292",
+    title: "CS107: C++ Programming"
   },
   {
     url:
@@ -111,8 +115,9 @@ const achievements = [
     title: "JavaScript Algorithms and Data Structures"
   },
   {
-    url: "https://certificates.saylor.org/144602ad-4262-48ba-bd43-e75da618e292",
-    title: "CS107: C++ Programming"
+    url:
+      "https://www.freecodecamp.org/certification/fccdeddf4b2-8af4-4000-95ab-864887c0afab/responsive-web-design",
+    title: "Responsive Web Design"
   }
 ];
 
