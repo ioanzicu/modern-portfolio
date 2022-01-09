@@ -11,7 +11,7 @@ h2.sm-heading,
 h3.sm-heading {
   font-weight: 700;
   margin-bottom: 1rem;
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0rem;
   background: lighten #444, 2;
   font-family: 'Capriola', sans-serif;
 }

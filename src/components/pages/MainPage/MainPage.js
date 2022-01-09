@@ -5,8 +5,21 @@ import "./MainPage.css";
 
 const Typewriter = () => (
   <div className="typewriter ">
-    <p className="subtitle">
-      geek + smart + curious + creative + ingenious + amiable ={" "}
+    <p className="subtitle" id='normal-typewriter'>
+      geek + smart + curious + creative + ingenious ={" "}
+      <span className="text-secondary">
+        <b>
+          ME
+          <span className="smile-section">
+            <i className="top-smile fas fa-smile-wink fa-2x" />
+            <i className="bottom-smile fas fa-smile fa-2x" />
+          </span>
+        </b>
+      </span>
+    </p>
+
+    <p className="subtitle" id="hidden-typewriter">
+      geek + smart + curious + creative ={" "}
       <span className="text-secondary">
         <b>
           ME
@@ -28,7 +41,7 @@ const MainPage = ({ location }) => (
 
       <Typewriter />
 
-      <h2 className="sm-heading mt-1">Full Stack Developer</h2>
+      <h2 className="sm-heading mt-1">Engineer, Developer</h2>
       <div className="icons mt-2">
         <a
           href="https://codepen.io/ioanzicu/"
