@@ -3,6 +3,7 @@
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'card1 card2 card3';
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 60px;
 }
 
 .bio-image {

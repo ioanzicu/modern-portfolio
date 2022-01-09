@@ -6,22 +6,34 @@ import { SkillsCard } from "../../Card/Card";
 import { skillsConfig, achievements } from "./config";
 import "./Skills.css";
 
+function fillZero(num) {
+  if (num.length === 1) {
+    return `0${num}`
+  }
+  return num
+}
+
+
 const Achievements = () => (
   <div className="achievements">
     <table>
       <thead className="table-head">
-        <tr>
+        < tr >
           <th>Nr</th>
-          <th>Date</th>
+          <th>Month</th>
+          <th>Day</th>
+          <th>Year</th>
           <th>Title</th>
         </tr>
-      </thead>
+      </thead >
       <tbody>
         {achievements &&
-          achievements.map(({ url, title, date }, index) => (
+          achievements.map(({ url, title, year, month, day }, index) => (
             <tr key={url}>
-              <td className="cell number">{index + 1}.{" "}</td>
-              <td className="cell date">{date}</td>
+              <td className="cell number">{index + 1}.</td>
+              <td className="cell month">{month}</td>
+              <td className="cell day">{fillZero(day)}</td>
+              <td className="cell year">{year}</td>
               <td className="cell title"><a className="achievement-item" href={url}>
                 {title}
               </a>
@@ -30,8 +42,8 @@ const Achievements = () => (
           ))}
 
       </tbody>
-    </table>
-  </div>
+    </table >
+  </div >
 );
 
 const Skills = ({ location }) => {

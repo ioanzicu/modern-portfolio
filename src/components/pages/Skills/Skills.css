@@ -1,10 +1,7 @@
 .achievements {
-  text-align: center;
-}
-
-.achievements {
-  text-align: left;
-  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .achievements a.achievement-item:hover {
@@ -15,16 +12,22 @@
 /* Table */
 
 table {
-  border: solid 1px  #eece1a;
-  border-radius:  15px 0px;
-  padding: 10px;
-  /* box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75); */
+  border-bottom: solid 5px  #eece1a;
+  border-radius:  30px 0px;
+  padding: 15px;
+  box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75);
+  width: 65%;
+  margin: 0 auto;
 }
 
 table thead tr th {
   text-align: center;
   border-bottom: solid 3px  #eece1a;
 
+}
+
+table tbody tr td {
+  border-bottom: solid 1px  #eece1a;
 }
 
 .table-head {
@@ -37,7 +40,59 @@ table .cell {
   padding: 5px 20px;
 }
 
-.number {
+/* table .title {
+  padding-left: 100px;
+} */
+
+table td:not(.title) {
   text-align: center;
 }
 
+@media screen and (min-width: 1171px) {
+  table {
+    width: 100%;
+  }
+
+  table .title {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  table {
+    width: 100%;
+  }
+
+  table .cell {
+    padding: 1px 5px;
+  }
+
+  table .title {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  table .cell {
+    padding: 1px 5px;
+  }
+
+
+  table .title {
+    padding-left: 3px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  table {
+    width: 100%;
+  }
+  
+  table .cell {
+    padding: 0px 0px;
+  }
+}

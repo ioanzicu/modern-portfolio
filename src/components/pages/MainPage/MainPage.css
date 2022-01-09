@@ -1,5 +1,5 @@
 main {
-  padding: 1rem 4rem 4rem 4rem;
+  padding: 1rem 10rem 0rem 10rem;
   min-height: 100vh;
 }
 main .icons a {
@@ -94,6 +94,7 @@ main#home h1 {
   main {
     align-items: center;
     text-align: center;
+    padding: 0.5rem 3rem 0rem 3rem;
   }
   main .lg-heading {
     line-height: 1;
@@ -114,6 +115,7 @@ main#home h1 {
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem;
+    padding: 0.5rem 1rem 0rem 1rem;
   }
   main #home h1 {
     margin-top: 10vh;
