@@ -56,7 +56,7 @@ const Menu = ({ location }) => {
               className={
                 location === '/work' ? 'nav-link current' : 'nav-link'
               }>
-              <i className='fas fa-project-diagram' /> My Work
+              <i className='fas fa-project-diagram' /> My Pet Projects
             </Link>
           </li>
 

@@ -8,15 +8,29 @@ import "./Skills.css";
 
 const Achievements = () => (
   <div className="achievements">
-    {achievements &&
-      achievements.map(({ url, title }, index) => (
-        <div key={url}>
-          {index + 1}.{" "}
-          <a className="achievement-item" href={url}>
-            {title}
-          </a>
-        </div>
-      ))}
+    <table>
+      <thead className="table-head">
+        <tr>
+          <th>Nr</th>
+          <th>Date</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        {achievements &&
+          achievements.map(({ url, title, date }, index) => (
+            <tr key={url}>
+              <td className="cell number">{index + 1}.{" "}</td>
+              <td className="cell date">{date}</td>
+              <td className="cell title"><a className="achievement-item" href={url}>
+                {title}
+              </a>
+              </td>
+            </tr>
+          ))}
+
+      </tbody>
+    </table>
   </div>
 );
 

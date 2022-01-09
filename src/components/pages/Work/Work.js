@@ -36,7 +36,7 @@ const Work = ({ location }) => (
     <main id="work">
       <Heading
         title="My"
-        secondaryTitle="Work"
+        secondaryTitle="Pet Projects"
         subtitle="Check out some of my projects..."
       />
 

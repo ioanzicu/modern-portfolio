@@ -2,12 +2,42 @@
   text-align: center;
 }
 
-.achievements div {
+.achievements {
   text-align: left;
   margin-left: 2rem;
 }
 
-.achievements div a.achievement-item:hover {
+.achievements a.achievement-item:hover {
   color: #eece1a;
   text-decoration: underline;
 }
+
+/* Table */
+
+table {
+  border: solid 1px  #eece1a;
+  border-radius:  15px 0px;
+  padding: 10px;
+  /* box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75); */
+}
+
+table thead tr th {
+  text-align: center;
+  border-bottom: solid 3px  #eece1a;
+
+}
+
+.table-head {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid 3px  #eece1a;
+}
+
+table .cell {
+  padding: 5px 20px;
+}
+
+.number {
+  text-align: center;
+}
+

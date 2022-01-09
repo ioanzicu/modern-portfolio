@@ -101,23 +101,56 @@ const skillsConfig = [
 
 const achievements = [
   {
+    url: "",
+    title: "ISTQB® Certified Tester - Foundation Level v3.1",
+    date: "January 4, 2022"
+  },
+  {
+    url:
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/K4JW8QVTCAXX",
+    title: "Deep Learning",
+    date: "November 30, 2021"
+  },
+  {
+    url:
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/RHBPX6R5U76M",
+    title: "Django for Everybody",
+    date: "October 23, 2021"
+  },
+  {
+    url:
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/8ZXFSR3Y6TBJ",
+    title: "Python for Everybody",
+    date: "October 3, 2021"
+  },
+  {
+    url:
+      "https://www.freecodecamp.org/certification/fccdeddf4b2-8af4-4000-95ab-864887c0afab/scientific-computing-with-python-v7",
+    title: "Scientific Computing with Python",
+    date: "May 9, 2021"
+  },
+  {
     url:
       "https://www.freecodecamp.org/certification/fccdeddf4b2-8af4-4000-95ab-864887c0afab/front-end-libraries",
-    title: "Front End Libraries"
+    title: "Front End Development Libraries",
+    date: "March 14, 2020"
   },
   {
     url: "https://certificates.saylor.org/144602ad-4262-48ba-bd43-e75da618e292",
-    title: "CS107: C++ Programming"
+    title: "CS107: C++ Programming",
+    date: "February 20, 2020"
   },
   {
     url:
       "https://www.freecodecamp.org/certification/fccdeddf4b2-8af4-4000-95ab-864887c0afab/javascript-algorithms-and-data-structures",
-    title: "JavaScript Algorithms and Data Structures"
+    title: "JavaScript Algorithms and Data Structures",
+    date: "December 18, 2018"
   },
   {
     url:
       "https://www.freecodecamp.org/certification/fccdeddf4b2-8af4-4000-95ab-864887c0afab/responsive-web-design",
-    title: "Responsive Web Design"
+    title: "Responsive Web Design",
+    date: "November 18, 2018"
   }
 ];
 

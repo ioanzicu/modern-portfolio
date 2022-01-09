@@ -14,7 +14,7 @@ const contactsConfig = [
   {
     title: "Address",
     icon: "fas fa-map-marked-alt",
-    value: "Poland, Katowice",
+    value: "Somewhere in Poland",
     link: ""
   },
   {
