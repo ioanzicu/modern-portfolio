@@ -25,9 +25,9 @@ const ExperienceCard = ({ icon, title, from, to, company, addres, tasks, index }
       </h2>
     </div>
     <ul>
-      {tasks && tasks.map(task => (
+      {tasks && tasks.map((task, idx) => (
         // <li className="work-task">{task}</li>
-        <li className="work-task" dangerouslySetInnerHTML={{ __html: task }}></li>
+        <li key={`${idx * 300}*&^*(0)`} className="work-task" dangerouslySetInnerHTML={{ __html: task }}></li>
       ))}
     </ul>
   </div>
