@@ -5,20 +5,38 @@ import "./Card.css";
 const AboutCard = ({ icon, title, description, index }) => (
   <div className={`card card-${index + 1}`}>
     <div className="card-title">
-      <i className={icon} />
+      {icon && <i className={icon} />}
       <h2>
-        <b>{title}</b>
+        {title && <b>{title}</b>}
         <hr />
       </h2>
     </div>
-    <span dangerouslySetInnerHTML={{ __html: description }} />
+    {description && <span dangerouslySetInnerHTML={{ __html: description }} />}
+  </div>
+);
+
+const ExperienceCard = ({ icon, title, from, to, company, addres, tasks, index }) => (
+  <div className="card exp-card">
+    <div className="card-title">
+      {/* {icon && <i className={icon} />} */}
+      <h2>
+        {title && <b>{title}</b>} {company && `at ${company}`}, {from && to && `${from} - ${to}`}, {addres && addres}
+        <hr />
+      </h2>
+    </div>
+    <ul>
+      {tasks && tasks.map(task => (
+        // <li className="work-task">{task}</li>
+        <li className="work-task" dangerouslySetInnerHTML={{ __html: task }}></li>
+      ))}
+    </ul>
   </div>
 );
 
 const SkillsCard = ({ title, icons, cardNr }) => (
   <div className={`card card-${cardNr}`}>
     <h2 className="card-title">
-      <b>{title}</b>
+      {title && <b>{title}</b>}
       <hr />
     </h2>
     <div className="box-icon-wrapper">
@@ -30,4 +48,4 @@ const SkillsCard = ({ title, icons, cardNr }) => (
   </div>
 );
 
-export { AboutCard, SkillsCard };
+export { AboutCard, SkillsCard, ExperienceCard };

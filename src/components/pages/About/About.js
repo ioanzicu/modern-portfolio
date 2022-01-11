@@ -1,10 +1,10 @@
 import React from "react";
-import Tilt from "react-tilt";
+// import Tilt from "react-tilt";
 import Menu from "../Menu/Menu";
 import Footer from "../Footer/Footer";
-import { AboutCard } from "../../Card/Card";
+import { ExperienceCard } from "../../Card/Card";
 import Heading from "../../Heading/Heading";
-import aboutConfig from "./config";
+import { expConfig } from "./config";
 import "./About.css";
 
 import portrait from "../../../img/portrait.jpg";
@@ -22,30 +22,44 @@ const About = ({ location }) => (
               Let me tell you a few things...
               <hr />
             </h2>
-            <p>
-              I am a Computer Science student, speciality "Mobile and Cloud
-              Computing", passionate about web technologies, programming
-              languages and cloud computing. Able to develop a full-stack web
-              application with RESTful and API functionality. Interested in
-              learning the new practical skills for increasing problem-solving
-              ability.
-            </p>
+            <div>
+              I am:
+              <ul>
+                <li>
+                  engineer with bachelor in Computer Science speciality "Mobile and Cloud
+                  Computing"
+                </li>
+                <li>
+                  passionate about web technologies, programming
+                  languages and cloud computing
+                </li>
+                <li>
+                  curious in
+                  learning new practical skills for increasing problem-solving
+                  ability.
+                </li>
+              </ul>
+            </div>
           </div>
-          {aboutConfig &&
-            aboutConfig.map(({ id, icon, title, description }, index) => (
-              <Tilt key={id} className="Tilt" options={{ max: 25 }}>
-                <AboutCard
-                  className="Tilt-inner"
-                  icon={icon}
-                  title={title}
-                  description={description}
-                  index={index + 1}
-                />
-              </Tilt>
-            ))}
+        </div>
+        <div className="exp-container">
+          {expConfig && expConfig.map(({ id, icon, title, from, to, company, addres, tasks }, index) => (
+            <ExperienceCard
+              key={id}
+              className="Tilt-inner"
+              // icon={icon}
+              title={title}
+              from={from}
+              to={to}
+              company={company}
+              addres={addres}
+              tasks={tasks}
+              index={index + 1}
+            />
+          ))}
         </div>
       </main>
-    </div>
+    </div >
     <Footer />
   </>
 );

@@ -3,7 +3,6 @@
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'card1 card2 card3';
   grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 60px;
 }
 
 .bio-image {
@@ -17,6 +16,24 @@
   grid-area: bio;
   font-size: 1.4rem;
   text-align: justify;
+}
+
+.exp-container {
+  margin-bottom: 5rem;
+}
+
+.exp-card {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.exp-card .card-title {
+  text-align: left;
+}
+
+.work-task {
+  padding: 5px;
+  font-size: large;
 }
 
 @media screen and (max-width: 768px) {
