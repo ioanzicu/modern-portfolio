@@ -18,6 +18,7 @@ table {
   box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75);
   width: 65%;
   margin: 0 auto;
+  font-size: large;
 }
 
 table thead tr th {
@@ -39,10 +40,6 @@ table tbody tr td {
 table .cell {
   padding: 5px 20px;
 }
-
-/* table .title {
-  padding-left: 100px;
-} */
 
 table td:not(.title) {
   text-align: center;

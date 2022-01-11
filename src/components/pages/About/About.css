@@ -23,12 +23,16 @@
 }
 
 .exp-card {
-  padding: 1rem;
-  margin: 1rem;
+  padding: 1rem 2rem 0rem;
+  margin: 2rem;
 }
 
 .exp-card .card-title {
   text-align: left;
+}
+
+.exp-card ul {
+  padding-right: 3rem;
 }
 
 .work-task {
