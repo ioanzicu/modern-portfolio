@@ -45,6 +45,7 @@ table td:not(.title) {
   text-align: center;
 }
 
+
 @media screen and (min-width: 1171px) {
   table {
     width: 100%;
@@ -81,6 +82,12 @@ table td:not(.title) {
 
   table .title {
     padding-left: 3px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  table .month, .day, .year {
+    display: none;
   }
 }
 

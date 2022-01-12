@@ -20,9 +20,9 @@ const Achievements = () => (
       <thead className="table-head">
         < tr >
           <th>Nr</th>
-          <th>Month</th>
-          <th>Day</th>
-          <th>Year</th>
+          <th className="month">Month</th>
+          <th className="day">Day</th>
+          <th className="year">Year</th>
           <th>Title</th>
         </tr>
       </thead >

@@ -43,3 +43,14 @@
   position: relative;
   text-align: center;
 }
+
+
+@media screen and (max-width: 768px) {
+  .card {
+    text-align: left;
+  }
+
+  .card i {
+    padding: 0px;
+  }
+}

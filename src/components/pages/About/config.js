@@ -35,7 +35,7 @@ const expConfig = [
     methodology: 'Scrum and Agile',
     tasks: [
       '<b>Test automation:</b> designing test cases, writing and integration of automated test scripts in Python using Robot Framework and shell, configuration and maintenance of the test environments as part of the CI/CD pipeline',
-      '<b>Testing:</b> manual and automation testing, software and hardware troubleshooting, defect management',
+      '<b>Testing:</b> 4G LTE and 5G NR - manual and automation testing, software and hardware troubleshooting, defect management',
       '<b>Software release:</b> integration and acceptance testing, verification of test reports and release of the software',
       '<b>Tech Stack:</b> Python, Robot Framework, Pycharm, shell scripting, Jira, Confluence, Git, GitLab & Gerrit, Jenkins CI/CD, JSON, XML, MS Teams'
     ]

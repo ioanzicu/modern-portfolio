@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 9rem;
+  margin-top: 6rem;
 }
 .boxes div {
   font-size: 1.4rem;
@@ -23,9 +23,15 @@
   color: #000;
 }
 
+@media screen and (min-width: 1171px) and (max-width: 1407px) {
+  .boxes div {
+    font-size: 1.1rem;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .boxes {
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
   
   .box-icon {

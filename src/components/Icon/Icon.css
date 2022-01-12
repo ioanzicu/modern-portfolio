@@ -78,3 +78,10 @@ dfn:hover::before {
 }
 
 /** Tooltip END **/
+
+
+@media screen and (max-width: 768px) {
+  .box-icon {
+    padding: 0rem;
+  }
+}

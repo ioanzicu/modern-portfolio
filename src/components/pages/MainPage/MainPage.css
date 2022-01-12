@@ -92,6 +92,12 @@ main#home h1 {
   }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    padding: 1rem 5rem 0rem 5rem;
+  }
+}
+
 /* SMILE ANIMATION END */
 
 @media screen and (max-width: 768px) {

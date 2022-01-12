@@ -15,7 +15,7 @@
 .bio {
   grid-area: bio;
   font-size: 1.4rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .exp-container {
@@ -24,7 +24,7 @@
 
 .exp-card {
   padding: 1rem 2rem 0rem;
-  margin: 2rem;
+  margin: 0rem 2rem 2rem 2rem;
 }
 
 .exp-card .card-title {
@@ -40,9 +40,29 @@
   font-size: large;
 }
 
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .exp-card {
+    margin: 0rem 0rem 2rem 0rem;
+  }
+
+  .exp-card ul {
+    padding: 0rem 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'card1' 'card2' 'card3';
     grid-template-columns: 1fr;
+    grid-gap: 0.5rem;
+  }
+
+  .exp-card {
+    margin: 0rem;
+  }
+
+  .exp-card ul {
+    padding: 0.5rem;
   }
 }
