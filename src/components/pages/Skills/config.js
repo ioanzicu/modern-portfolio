@@ -124,6 +124,13 @@ const achievements = [
     day: "23"
   },
   {
+    url: "",
+    title: "Advanced Python programming techniques",
+    year: "2021",
+    month: "October",
+    day: "15"
+  },
+  {
     url:
       "https://www.coursera.org/account/accomplishments/specialization/certificate/8ZXFSR3Y6TBJ",
     title: "Python for Everybody",
