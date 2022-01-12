@@ -58,8 +58,11 @@
     grid-gap: 0.5rem;
   }
 
-  .exp-card {
+  .exp-card:first-child {
     margin: 0rem;
+  }
+  .exp-card {
+    margin: 1.5rem 0rem;
   }
 
   .exp-card ul {
