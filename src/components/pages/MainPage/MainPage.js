@@ -42,23 +42,43 @@ const MainPage = ({ location }) => (
       <Typewriter />
 
       <h2 className="sm-heading mt-1">Full Stack Software Engineer</h2>
+
+      <ul>
+
+        <li>
+          Highly motivated and skilled software engineer with Bachelor in Computer Science and 2,5 years of commercial
+          experience.
+        </li>
+
+        <li>
+          Working with Golang, Python, JavaScript/TypeScript, Azure, Terraform, Docker, Kubernetes, and more.
+        </li>
+
+        <li>
+          Strong understanding of Agile and Scrum methodologies, and experienced in test automation, software release, and
+          troubleshooting.
+        </li>
+
+        <li>
+          Keen to learn and develop my skills, as a proof you can check my achievements page.
+        </li>
+
+      </ul>
+
       <div className="icons mt-2">
         <a
           href="https://codepen.io/ioanzicu/"
-          title="See my projects on Codepen"
-        >
+          title="See my projects on Codepen">
           <i className="fab fa-codepen fa-2x" />
         </a>
         <a
           href="https://www.linkedin.com/in/ioan-z%C3%AEcu-29109b161/"
-          title="Keep in touch on Linkedin"
-        >
+          title="Keep in touch on Linkedin">
           <i className="fab fa-linkedin fa-2x" />
         </a>
         <a
           href="https://www.github.com/ioanzicu"
-          title="Check my projects on GitHub"
-        >
+          title="Check my projects on GitHub">
           <i className="fab fa-github fa-2x" />
         </a>
       </div>

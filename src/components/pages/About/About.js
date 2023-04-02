@@ -19,19 +19,18 @@ const About = ({ location }) => (
           <img src={portrait} alt="Ioan Zîcu" className="bio-image" />
           <div className="bio">
             <h2 className="text-secondary">
-              Let me tell you a few things...
+              I am:
               <hr />
             </h2>
             <div>
-              I am:
               <ul>
                 <li>
                   engineer with bachelor in Computer Science speciality "Mobile and Cloud
-                  Computing"
+                  Computing",
                 </li>
                 <li>
                   passionate about web technologies, programming
-                  languages and cloud computing
+                  languages and cloud computing,
                 </li>
                 <li>
                   curious in
