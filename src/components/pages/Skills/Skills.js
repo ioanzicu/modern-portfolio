@@ -34,7 +34,7 @@ const Achievements = () => (
               <td className="cell month">{month}</td>
               <td className="cell day">{fillZero(day)}</td>
               <td className="cell year">{year}</td>
-              <td className="cell title"><a className="achievement-item" href={url}>
+              <td className="cell title"><a className="achievement-item" href={url} target="_blank" rel="noreferrer">
                 {title}
               </a>
               </td>

@@ -101,6 +101,34 @@ const skillsConfig = [
 
 const achievements = [
   {
+    url: "https://www.credly.com/badges/5f80cb7c-b8e5-4c4d-ac90-edb10b6cad73/linked_in_profile",
+    title: "AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+    year: "2023",
+    month: "February",
+    day: "28"
+  },
+  {
+    url: "https://www.credly.com/badges/41a2fa5a-4108-4f61-a62e-f40179c33b1b/linked_in_profile",
+    title: "Microsoft Certified: Azure Data Fundamentals DP-900",
+    year: "2022",
+    month: "December",
+    day: "15"
+  },
+  {
+    url: "https://www.credly.com/badges/88280a78-141e-4dce-a742-684596d8a53d/linked_in_profile",
+    title: "Microsoft Certified: Azure Fundamentals AZ-900",
+    year: "2022",
+    month: "October",
+    day: "13"
+  },
+  {
+    url: "",
+    title: "ISTQB® Certified Tester, Advanced Level Test Automation Engineer",
+    year: "2022",
+    month: "April",
+    day: "8"
+  },
+  {
     url: "",
     title: "ISTQB® Certified Tester - Foundation Level v3.1",
     year: "2022",

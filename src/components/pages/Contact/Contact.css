@@ -5,6 +5,7 @@
   align-items: center;
   margin-top: 6rem;
 }
+
 .boxes div {
   font-size: 1.4rem;
   border-radius: 10px;
@@ -12,14 +13,20 @@
   margin-bottom: 3rem;
   transition: all 0.5s ease-out;
   width: 45%;
-  border-radius:  30px 0px;
+  border-radius: 30px 0px;
   box-shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.75);
 }
+
 .boxes div:hover {
-  background: #eece1a;
+  background: #d8c03b;
   box-shadow: 0px 5px 20px 10px #eece1a;
 }
+
 .boxes div:hover span {
+  color: #000;
+}
+
+.boxes div:hover a {
   color: #000;
 }
 
@@ -33,7 +40,7 @@
   .boxes {
     margin-top: 3rem;
   }
-  
+
   .box-icon {
     padding: 2%;
     display: inline-block;
@@ -51,6 +58,7 @@
   .boxes {
     margin-top: 3rem;
   }
+
   .boxes div {
     width: 90%;
   }
