@@ -41,7 +41,7 @@ const MainPage = ({ location }) => (
 
       <Typewriter />
 
-      <h2 className="sm-heading mt-1">Engineer, Developer</h2>
+      <h2 className="sm-heading mt-1">Full Stack Software Engineer</h2>
       <div className="icons mt-2">
         <a
           href="https://codepen.io/ioanzicu/"

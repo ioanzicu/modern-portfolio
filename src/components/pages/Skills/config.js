@@ -17,16 +17,6 @@ const skillsConfig = [
         id: "3+(*^%RF%%",
         dataInfo: "Python v3.6+",
         icon: "fab fa-python fa-3x"
-      },
-      {
-        id: "3((*^%RF%^",
-        dataInfo: "Functional PHP, OOP PHP",
-        icon: "fab fa-php fa-3x"
-      },
-      {
-        id: "3}(*^%RF%$&",
-        dataInfo: "Java for Android, OOP, XML",
-        icon: "fab fa-java fa-3x"
       }
     ]
   },
@@ -82,7 +72,7 @@ const skillsConfig = [
       },
       {
         id: "3>(vS4_^&-5",
-        dataInfo: "MySQL, PostgresSQL, MSSQL, MongoDB",
+        dataInfo: "SQL",
         icon: "fas fa-database fa-3x"
       },
       {
