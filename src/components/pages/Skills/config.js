@@ -92,7 +92,7 @@ const skillsConfig = [
 const achievements = [
   {
     url: "https://www.credly.com/badges/5f80cb7c-b8e5-4c4d-ac90-edb10b6cad73/linked_in_profile",
-    title: "AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+    title: "Designing and Implementing Microsoft DevOps Solutions: AZ-400",
     year: "2023",
     month: "February",
     day: "28"
@@ -103,6 +103,13 @@ const achievements = [
     year: "2022",
     month: "December",
     day: "15"
+  },
+  {
+    url: "https://www.credly.com/badges/ad480a85-286c-40c1-8725-83f1b9cf44d1/linked_in?t=rmhg92",
+    title: "Microsoft Certified: Azure Developer Associate AZ-204",
+    year: "2022",
+    month: "December",
+    day: "6"
   },
   {
     url: "https://www.credly.com/badges/88280a78-141e-4dce-a742-684596d8a53d/linked_in_profile",

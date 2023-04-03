@@ -37,7 +37,7 @@ const MainPage = ({ location }) => (
   <>
     <Menu location={location.pathname} className="page" />
     <main id="home">
-      <Heading title="Ioan" secondaryTitle="Zîcu" />
+      <Heading title="Zîcu" secondaryTitle="Ioan" />
 
       <Typewriter />
 
@@ -51,7 +51,7 @@ const MainPage = ({ location }) => (
         </li>
 
         <li>
-          Working with Golang, Python, JavaScript/TypeScript, Azure, Terraform, Docker, Kubernetes, and more.
+          Working with <b>Golang</b>, <b>Python</b>, <b>JavaScript / TypeScript</b>, Azure, Terraform, Docker, Kubernetes, and more.
         </li>
 
         <li>
@@ -60,7 +60,7 @@ const MainPage = ({ location }) => (
         </li>
 
         <li>
-          Keen to learn and develop my skills, as a proof you can check my achievements page.
+          Keen to learn and develop my skills, as a proof you can check my Skills page.
         </li>
 
       </ul>
