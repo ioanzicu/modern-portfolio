@@ -25,11 +25,11 @@ main#home h1 {
   font-size: 1rem;
   font-family: monospace;
   letter-spacing: 0.08em;
-  margin: auto; /* Gives that scrolling effect as the typing happens */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  border-right: 0.2em solid #eece1a;
-  animation: typing 4s steps(35, end), blinking-cursor 0.6s step-end infinite;
+  border-right: 0.3em solid #eece1a;
+  animation: typing 3s steps(40, end), blinking-cursor 1s step-end infinite;
 }
 
 #hidden-typewriter {
@@ -73,7 +73,7 @@ main#home h1 {
   animation-name: fade;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-direction: alternate;
 }
 
@@ -102,20 +102,24 @@ main#home h1 {
 
 @media screen and (max-width: 768px) {
   main {
-    align-items: center;
-    text-align: center;
     padding: 0.5rem 3rem 0rem 3rem;
   }
   main .lg-heading {
+    align-items: center;
+    text-align: center;
+    
     line-height: 1;
     margin-bottom: 1rem;
     font-size: 4.5rem;
   }
 
+  main ul {
+    text-align: left;
+  }
+
   /* TYPEWRITER EFFECT */
   .typewriter {
-    width: 500px;
-    margin: auto;
+    width: 460px;
   }
 
   #normal-typewriter {
