@@ -36,11 +36,14 @@ const Typewriter = () => (
 
 // returns years, months
 const workExperience = () => {
-  const hireDate = new Date('2021-02-15T00:00:00.000Z')
+  // work + internships
+  const hireDate = new Date('2020-09-01T00:00:00.000Z') // 2021-02-15T00:00:00.000Z - Nokia hire
   const currDate = new Date()
+  const diffTime = Math.abs(currDate - hireDate)
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
   return {
-    years: currDate.getFullYear() - hireDate.getFullYear(),
-    months: currDate.getMonth() - hireDate.getMonth() + 1
+    years: Math.trunc(diffDays / 365),
+    months: Math.ceil((diffDays / 30) % 12)
   }
 }
 
@@ -57,8 +60,7 @@ const MainPage = ({ location }) => (
       <ul>
 
         <li>
-          Highly motivated and skilled software engineer with Bachelor in Computer Science and {workExperience().years} years {workExperience().months} months of commercial
-          experience.
+          Highly motivated and skilled software engineer with Bachelor in Computer Science and {workExperience().years} years {workExperience().months} months of commercial experience.
         </li>
 
         <li>
@@ -66,8 +68,7 @@ const MainPage = ({ location }) => (
         </li>
 
         <li>
-          Strong understanding of Agile and Scrum methodologies, and experienced in test automation, software release, and
-          troubleshooting.
+          Strong understanding of Agile and Scrum methodologies, and experienced in test automation, software release, and troubleshooting.
         </li>
 
         <li>
@@ -81,6 +82,7 @@ const MainPage = ({ location }) => (
         <li>
           Certified Azure DevOps Engineer - AZ 400
         </li>
+
         <li>
           Keen to learn and develop my skills, as a proof you can check my Skills page.
         </li>
