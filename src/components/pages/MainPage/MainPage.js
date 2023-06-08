@@ -33,6 +33,17 @@ const Typewriter = () => (
   </div>
 );
 
+
+// returns years, months
+const workExperience = () => {
+  const hireDate = new Date('2021-02-15T00:00:00.000Z')
+  const currDate = new Date()
+  return {
+    years: currDate.getFullYear() - hireDate.getFullYear(),
+    months: currDate.getMonth() - hireDate.getMonth() + 1
+  }
+}
+
 const MainPage = ({ location }) => (
   <>
     <Menu location={location.pathname} className="page" />
@@ -46,7 +57,7 @@ const MainPage = ({ location }) => (
       <ul>
 
         <li>
-          Highly motivated and skilled software engineer with Bachelor in Computer Science and 2,5 years of commercial
+          Highly motivated and skilled software engineer with Bachelor in Computer Science and {workExperience().years} years {workExperience().months} months of commercial
           experience.
         </li>
 
@@ -59,6 +70,17 @@ const MainPage = ({ location }) => (
           troubleshooting.
         </li>
 
+        <li>
+          Certified Tester ISTQB® Test Automation Engineer
+        </li>
+
+        <li>
+          Certified Azure Developer Associate - AZ 204
+        </li>
+
+        <li>
+          Certified Azure DevOps Engineer - AZ 400
+        </li>
         <li>
           Keen to learn and develop my skills, as a proof you can check my Skills page.
         </li>
