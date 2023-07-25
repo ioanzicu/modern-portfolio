@@ -42,7 +42,7 @@ const SkillsCard = ({ title, icons, cardNr }) => (
     <div className="box-icon-wrapper">
       {icons &&
         icons.map(({ id, dataInfo, icon }) => (
-          <Icon key={id} dataInfo={dataInfo} icon={icon} />
+          <Icon key={id + dataInfo} dataInfo={dataInfo} icon={icon} />
         ))}
     </div>
   </div>

@@ -6,6 +6,7 @@ import { SkillsCard } from "../../Card/Card";
 import { skillsConfig, achievements } from "./config";
 import "./Skills.css";
 
+
 function fillZero(num) {
   if (num.length === 1) {
     return `0${num}`
@@ -29,7 +30,7 @@ const Achievements = () => (
       <tbody>
         {achievements &&
           achievements.map(({ url, title, year, month, day }, index) => (
-            <tr key={url}>
+            <tr key={url + title}>
               <td className="cell number">{index + 1}.</td>
               <td className="cell month">{month}</td>
               <td className="cell day">{fillZero(day)}</td>
@@ -55,15 +56,16 @@ const Skills = ({ location }) => {
           <Heading
             title="My"
             secondaryTitle="Skills"
-            subtitle="Achievements"
+            subtitle="Certifications"
             subtitleIcon="text-secondary fas fa-medal fa-1x"
           />
           <Achievements />
           <div className="about-info">
             {skillsConfig &&
               skillsConfig.map(({ id, title, icons }, index) => (
+
                 <SkillsCard
-                  key={id}
+                  key={id + title}
                   title={title}
                   icons={icons}
                   cardNr={index + 1}

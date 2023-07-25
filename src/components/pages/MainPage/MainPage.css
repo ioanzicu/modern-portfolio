@@ -2,16 +2,20 @@ main {
   padding: 1rem 10rem 0rem 10rem;
   min-height: 100vh;
 }
+
 main .icons a {
   padding: 1rem;
 }
+
 main .icons a:hover {
   color: #eece1a;
   transition: all 0.5s ease-out;
 }
+
 main#home {
   overflow: hidden;
 }
+
 main#home h1 {
   margin-top: 20vh;
 }
@@ -25,9 +29,12 @@ main#home h1 {
   font-size: 1rem;
   font-family: monospace;
   letter-spacing: 0.08em;
-  margin: 0; /* Gives that scrolling effect as the typing happens */
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0;
+  /* Gives that scrolling effect as the typing happens */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
   border-right: 0.3em solid #eece1a;
   animation: typing 3s steps(40, end), blinking-cursor 1s step-end infinite;
 }
@@ -41,6 +48,7 @@ main#home h1 {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -48,10 +56,12 @@ main#home h1 {
 
 /* The typewriter cursor effect */
 @keyframes blinking-cursor {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: #eece1a;
   }
@@ -81,12 +91,15 @@ main#home h1 {
   0% {
     opacity: 1;
   }
+
   25% {
     opacity: 1;
   }
+
   75% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -104,10 +117,11 @@ main#home h1 {
   main {
     padding: 0.5rem 3rem 0rem 3rem;
   }
+
   main .lg-heading {
     align-items: center;
     text-align: center;
-    
+
     line-height: 1;
     margin-bottom: 1rem;
     font-size: 4.5rem;
@@ -125,6 +139,7 @@ main#home h1 {
   #normal-typewriter {
     display: none;
   }
+
   #hidden-typewriter {
     display: block;
   }
@@ -135,9 +150,11 @@ main#home h1 {
     padding: 2rem;
     padding: 0.5rem 1rem 0rem 1rem;
   }
+
   main #home h1 {
     margin-top: 10vh;
   }
+
   main .lg-heading {
     margin-top: 1rem;
     font-size: 4rem;

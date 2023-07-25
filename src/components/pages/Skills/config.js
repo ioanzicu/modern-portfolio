@@ -4,19 +4,19 @@ const skillsConfig = [
     title: "Coding Languages",
     icons: [
       {
-        id: "31(*^%RF%$",
-        dataInfo: "JavaScript, ES6, OOP Javascript",
-        icon: "fab fa-js fa-3x"
+        id: "33(*^%RF%$",
+        dataInfo: "Golang",
+        icon: "golang"
       },
       {
-        id: "3_(*^%RF%#",
-        dataInfo: "Node JS, Express JS",
-        icon: "fab fa-node fa-3x"
+        id: "31(*^%RF%$",
+        dataInfo: "JavaScript/TypeScript, Node JS, ES6, OOP Javascript",
+        icon: "js"
       },
       {
         id: "3+(*^%RF%%",
         dataInfo: "Python v3.6+",
-        icon: "fab fa-python fa-3x"
+        icon: "python"
       }
     ]
   },
@@ -25,66 +25,76 @@ const skillsConfig = [
     title: "Front End",
     icons: [
       {
-        id: "3K(vS4623-1",
+        id: "3K(vS46M>23-1",
         dataInfo: "HTML5",
-        icon: "fab fa-html5 fa-3x"
+        icon: "html5"
       },
       {
-        id: "3A(vS4623-2",
+        id: "3A(vS4KP623-2",
         dataInfo: "CSS 3, Animations, Key-Frames Animations, Responsive Design",
-        icon: "fab fa-css3-alt fa-3x"
+        icon: "css3"
       },
       {
-        id: "3*(vS4623-3",
+        id: "3*(vS4TR623-3",
         dataInfo: "SASS CSS Preprocessor",
-        icon: "fab fa-sass fa-3x"
+        icon: "sass"
       },
       {
-        id: "3~(vS4623-4",
+        id: "3~(vS46FD23-4",
         dataInfo: "Bootstrap 4",
-        icon: "fab fa-bootstrap fa-3x"
+        icon: "bootstrap"
       },
       {
-        id: "33(vS4623-5",
+        id: "33(vS4aS623-5",
         dataInfo: "React JS, React Router, Redux",
-        icon: "fab fa-react fa-3x"
+        icon: "react"
       }
     ]
   },
   {
     id: "908659781__3",
-    title: "Toolset",
+    title: "DevOps CI / CD",
     icons: [
       {
-        id: "3h(vS4_^&-1",
+        id: "3h(vSw4_^&-1",
         dataInfo: "Git & GitHub",
-        icon: "fab fa-git fa-3x"
+        icon: "git"
       },
       {
-        id: "3R(vS4_^&-3",
-        dataInfo: "NPM Package Manger",
-        icon: "fab fa-npm fa-3x"
+        id: "3h(vS4_^4&51",
+        dataInfo: "Gitlab",
+        icon: "gitlab"
       },
       {
-        id: "3L(vS4_^&-4",
-        dataInfo: "Yarn Package Manger",
-        icon: "fab fa-yarn fa-3x"
+        id: "3h(vS4_s^5-1",
+        dataInfo: "Docker",
+        icon: "docker"
       },
+      // {
+      //   id: "3R(vS4_^&-3",
+      //   dataInfo: "NPM Package Manger",
+      //   icon: "npm"
+      // },
+      // {
+      //   id: "3L(vS4_^&-4",
+      //   dataInfo: "Yarn Package Manger",
+      //   icon: "yarn"
+      // },
       {
         id: "3>(vS4_^&-5",
         dataInfo: "SQL",
-        icon: "fas fa-database fa-3x"
+        icon: "sql"
       },
       {
         id: "3<(vS4_^&-6",
         dataInfo: "Linux OS",
-        icon: "fab fa-linux fa-3x"
+        icon: "linux"
       },
-      {
-        id: "3?(vS4_^&-7",
-        dataInfo: "Windows 10 OS",
-        icon: "fab fa-windows fa-3x"
-      }
+      // {
+      //   id: "3?(vS4_^&-7",
+      //   dataInfo: "Windows 10 OS",
+      //   icon: "windows"
+      // }
     ]
   }
 ];
