@@ -38,13 +38,10 @@ const Typewriter = () => (
 const workExperience = () => {
   // work + internships
   const hireDate = new Date('2020-09-01T00:00:00.000Z') // 2021-02-15T00:00:00.000Z - Nokia hire
-  const currDate = new Date()
+  const currDate = new Date() 
   const diffTime = Math.abs(currDate - hireDate)
-  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
-  return {
-    years: Math.trunc(diffDays / 365),
-    months: Math.ceil((diffDays / 30) % 12)
-  }
+  const diffDays = Math.ceil(diffTime / (1000 * 3600 * 24))
+  return {years: Math.trunc(diffDays / 365)}
 }
 
 const MainPage = ({ location }) => (
@@ -60,7 +57,7 @@ const MainPage = ({ location }) => (
       <ul>
 
         <li>
-          Highly motivated and skilled software engineer with Bachelor in Computer Science and {workExperience().years} years {workExperience().months} months of commercial experience.
+          Highly motivated and skilled software engineer with Bachelor in Computer Science and {workExperience().years} years of commercial experience.
         </li>
 
         <li>
