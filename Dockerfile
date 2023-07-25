@@ -1,5 +1,5 @@
 # pull official base image
-FROM node:12.19.0-alpine
+FROM node:16-bullseye-slim
 
 # set working directory
 WORKDIR /srv/app/portfolio
