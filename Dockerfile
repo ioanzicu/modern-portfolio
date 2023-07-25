@@ -12,7 +12,7 @@ LABEL maintainer="Ioan Zîcu <ioan.zicu94@gmail.com>"
 # install app dependencies
 COPY package.json /srv/app/portfolio
 COPY yarn.lock /srv/app/portfolio
-RUN yarn --ignore-platform
+RUN yarn install --ignore-engines
 
 # add app
 COPY . /srv/app/portfolio
